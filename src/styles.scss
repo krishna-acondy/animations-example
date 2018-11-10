@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+* {
+    font-family: Roboto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+}
+.card {
+    cursor: pointer;
+    width: 20vw;
+    height: 20vh;
+    padding: 1%;
+    margin: 1%;
+
+    &:hover {
+        background-color: hsl(194, 100%, 50%);
+        transition: 0.7s;
+    }
+}

@@ -1,0 +1,7 @@
+<h3>Dishes</h3>
+<div class='cards'>
+  <app-card *ngFor='let dish of dishes[cuisine | async]' [linkUrl]='getLink(dish)'>
+    {{ dish }}
+  </app-card>
+</div>
+<router-outlet></router-outlet>
